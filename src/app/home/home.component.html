@@ -1,0 +1,81 @@
+<!--Phần bander-->
+<div class="container-fluid" id="Bander">
+  <div id="my-div"></div>
+  <a class="Ticket" title="Tạo Ticket" href="#">
+    Tạo Ticket
+  </a>
+  <div class="container content">
+    <div class="row">
+      <div class="col-8">
+        <p class="col-12 top">
+          <img src="assets/themes/theme01/assets/css/pic/icon/icondangky.png" />
+        </p>
+        <p class="col-12 text1">Tìm điều bạn cần</p>
+        <p class="col-12 text2">Dễ dàng, đầy đủ và chi tiết nhất trong vô vàn tri thức từ Civi.</p>
+        <div class="GupSeach">
+          <i class="fa fas fa-search"></i>
+          <input class="form-control form-control-lg search" type="text" placeholder="Search the knowledge base...">
+        </div>
+      </div>
+      <div class="col-4 right">
+        <img class="img-fluid" src="assets/themes/theme01/assets/css/pic/Bander_home1.png" />
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--end bander-->
+<!--phần nội dung trang-->
+<section>
+  <div class="container-fluid" id="wapper">
+    <div class="container">
+      <div class="row contert1">
+        <p class="col-12 head">Civi System - Affiliate Marketing</p>
+        <p class="col-12 text">
+          Civi System – Affiliate Marketing được xem là cổng trung gian, kết nối các công ty bán hàng cũng như cung cấp
+          các dịch vụ trực <br />
+          tuyến như một công ty thương mại điện tử. Nó kết nối khách hàng thông qua các đối tác truyền thông của mình để
+          đưa <br />
+          hàng hóa và dịch vụ của mình đến tay khách hàng
+        </p>
+        <div class="col-md-6 item" *ngFor="let eachTitle of titles">
+          <p class="text1">
+            <img class="img-fluid" src="{{eachTitle.linkImg}}" />
+          </p>
+          <a routerLink="/{{eachTitle.link}}" title="{{eachTitle.tieude}}">
+            {{eachTitle.tieude}}
+          </a>
+          <p class="text3">
+            {{eachTitle.noidung}}
+          </p>
+        </div>
+      </div>
+      <div class="row contert2">
+        <div class="col-md-6">
+          <p class="head">
+            Video nổi bật
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Mp0lxtVp6T8" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <p class="head">
+            Thông báo quan trọng
+          </p>
+          <p class="textpro">
+            <b>Protected:</b>
+            Tracking cho Advertiser: Tự lưu cookie với Google Tag Manager
+          </p>
+          <p class="textpro">
+            <b>Protected:</b>
+            Tracking cho Advertiser: Tự lưu cookie với Google Tag Manager
+          </p>
+          <p class="textpro">
+            <b>Protected:</b>
+            Tracking cho Advertiser: Tự lưu cookie với Google Tag Manager
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

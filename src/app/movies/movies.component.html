@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h2>My favorite movies</h2>
+      <ol class="movies">
+        <li class="movieListItem" *ngFor="let eachMovie of movies">
+          {{eachMovie.name}} -- {{eachMovie.releaseYear}}
+        </li>
+      </ol>
+    </div>
+    <!-- cot2 -->
+    <div class="col-6">
+      <h2>My favorite titles load từ serve</h2>
+      <ol class="movies">
+        <li class="movieListItem" *ngFor="let eachTitle of titles">
+          <b>
+            {{eachTitle.tieude}}
+          </b>
+          <br>
+          - {{eachTitle.noidung}}
+        </li>
+      </ol>
+    </div>
+
+    <div class="col-6">
+        <ol class="movies">
+            <li class="movieListItem" 
+                *ngFor="let eachTitle of titles">
+                <p class="text1">
+                  <img class="img-fluid" src="{{eachTitle.linkImg}}" />
+                </p>
+                <a routerLink="/{{eachTitle.link}}" style="text-decoration: none;" title="{{eachTitle.tieude}}">
+                    {{eachTitle.tieude}} 
+                </a>     
+                <p>{{eachTitle.noidung}}</p>       
+            </li>
+        </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <h2>Quảng cáo</h2>
+      <ol class="movies">
+          <li class="movieListItem" 
+              *ngFor="let eachQuangCao of quangcaos">
+              <p class="text1">
+                <img class="img-fluid" src="{{eachQuangCao.LinkImg}}" />
+              </p>
+              <a routerLink="/{{eachQuangCao.Link}}" style="text-decoration: none;" title="{{eachQuangCao.Tieude}}">
+                  {{eachQuangCao.Tieude}} 
+              </a>     
+              <p>{{eachQuangCao.Noidung}}</p>       
+          </li>
+      </ol>
+  </div>
+  </div>
+</div>

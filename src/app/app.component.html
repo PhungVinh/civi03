@@ -1,0 +1,157 @@
+<!--Phần header-->
+<header class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a routerLink="/trang-chu" class="navbar-brand" href="#" title="Civi.vn">
+                    <img src="assets/themes/theme01/assets/css/pic/logocivi.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <!--<li class="nav-item active">
+                          <a class="nav-link" href="#">Cách chạy QC <span class="sr-only">(current)</span></a>
+                      </li>-->
+                        <li class="nav-item dropdown">
+                            <a routerLink="/cach-chay-quang-cao" class="nav-link" href="#" title="Cách chạy QC"
+                                id="navbarDropdown">
+                                Cách chạy QC
+                            </a>
+                            <!--<div class="dropdown-content">
+                              <a class="dropdown-item" href="#">link1</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">link2</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">link2</a>
+                          </div>-->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a routerLink="/huong-dan" class="nav-link" href="#" title="Hướng dẫn với Civi"
+                                id="navbarDropdown">
+                                Hướng dẫn với Civi
+                            </a>
+                            <!-- <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">link1</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">link2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">link2</a>
+                            </div> -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" title="Tim mới+" id="navbarDropdown">
+                                Tim mới+
+                            </a>
+                            <div class="dropdown-content">
+                                <a routerLink="/su-kien" class="dropdown-item" href="#">Sự kiện</a>
+                                <div class="dropdown-divider"></div>
+                                <a routerLink="/tinh-nang-moi" class="dropdown-item" href="#">Tính năng mới</a>
+                                <div class="dropdown-divider"></div>
+                                <a routerLink="/chien-dich" class="dropdown-item" href="#">Cập nhập thông tin chiến
+                                    dịch</a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                            <!--<ul class="dropdown-content">
+                            <li class="dropdown-item"><a href="">item 1</a></li>
+                            <li class="dropdown-item"><a href="">item 1</a></li>
+                            <li class="dropdown-item"><a href="">item 1</a></li>
+                          </ul> -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a routerLink="/faq" class="nav-link" href="#" title="FAQ+" id="navbarDropdown">
+                                FAQ+
+                            </a>
+                            <!-- <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">link1</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">link2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">link2</a>
+                            </div> -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" title="Video Chanel+" id="navbarDropdown">
+                                Video Chanel+
+                            </a>
+                            <!-- <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">link1</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">link2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">link2</a>
+                            </div> -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" title="liên hệ" id="navbarDropdown">
+                                liên hệ
+                            </a>
+                            <!--<div class="dropdown-content">
+                              <a class="dropdown-item" href="#">link1</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">link2</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">link2</a>
+                          </div>-->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a routerLink="/dang-ky" class="nav-link" href="#" title=" Đăng ký+" id="navbarDropdown">
+                                Đăng ký+
+                            </a>
+                            <!--<div class="dropdown-content">
+                              <a class="dropdown-item" href="#">link1</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">link2</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">link2</a>
+                          </div>-->
+                        </li>
+                    </ul>
+                    <div class="notification">
+                        <i class="fa fas fa-bell"></i>
+                        <p class="numeber">2</p>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</header>
+<!--end header-->
+<router-outlet></router-outlet>
+<!--Phần footer chân trang-->
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="head">civi system</p>
+                    <div class="row support">
+                        <p class="col-md-6">Hotline: <span class="Hotline">0965 691 881</span></p>
+                        <p class="col-md-6">Kỹ Thuật: <span class="KyThuat">0945 791 016</span></p>
+                    </div>
+                    <div class="row support">
+                        <p class="col-md-6">Email: <span class="Email">info@civi.vn</span></p>
+                        <p class="col-md-6">Tổng đài CSKH: <span>0914 294 188</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="head">Hà nội</p>
+                    <p class="text">Trụ sở chính : 35 Chùa Láng, Láng Thượng, Đống Đa, Hà Nội</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="head">Tp.Hcm</p>
+                    <p class="text">Chi nhánh : Số 21 Nguyễn Cửu Vân , Phường 17 , Q.Bình Thạnh, HCM</p>
+                </div>
+            </div>
+            <div class="row Copyright">
+                <p class="col-md-12">Copyright: Civi.vn</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end footer-->

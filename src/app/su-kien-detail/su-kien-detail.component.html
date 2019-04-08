@@ -1,0 +1,38 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div *ngIf="sukien" class="col-md-6 offset-md-3">
+        <div class="form-group">
+          <label for="usr">Tiêu đề:</label>
+          <input [(ngModel)]="sukien.Tieude" type="text" class="form-control" placeholder="Tieude">
+        </div>
+        <div class="form-group">
+          <label for="comment">Mô tả:</label>
+          <textarea [(ngModel)]="sukien.Mota" class="form-control" rows="3" id="comment"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="comment">Nội dung bài viết:</label>
+          <textarea [(ngModel)]="sukien.Noidung" class="form-control" rows="8" id="comment"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="usr">Posted:</label>
+          <input [(ngModel)]="sukien.Posted" type="text" class="form-control" placeholder="Posted">
+        </div>
+        <div class="form-group">
+          <label for="usr">By:</label>
+          <input [(ngModel)]="sukien.By" type="text" class="form-control" placeholder="By">
+        </div>
+        <h2>Hết phần test edit</h2>
+        <img class="img-fluid" src="{{sukien.LinkImg}}" />
+        <p>{{sukien.Tieude}}</p>
+        <p>{{sukien.Noidung}}</p>
+        <p class="text2">
+          Posted:<samp>{{sukien.Posted}}</samp>
+          By:<samp>{{sukien.By}}</samp>
+        </p>
+        <button (click)="save()" class="btn btn-primary m-1">Save</button>
+        <button (click)="goBack()" class="btn btn-primary">go back</button>
+      </div>
+    </div>
+  </div>
+</section>
